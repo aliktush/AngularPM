@@ -1,0 +1,4 @@
+/.idea
+app/dist/*
+npm-debug.log
+node_modules/*

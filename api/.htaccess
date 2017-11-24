@@ -1,0 +1,8 @@
+DirectoryIndex api.php
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteRule ^$ api.php [QSA,L]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.*)$ api.php?r=$1 [QSA,L]
+</IfModule>

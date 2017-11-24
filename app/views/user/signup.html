@@ -1,0 +1,60 @@
+<div class="signup">
+
+        <div class="title">Sign Up</div>
+        <div class="login-form-1">
+            <form id="login-form" class="text-left">
+                <div class="login-form-main-message"
+                     ng-class="{show:message,success:status=='success',error:status=='error'}">{{message}}</div>
+                <div class="main-login-form">
+                    <div class="login-group">
+                        <div class="form-group">
+                            <label for="username" class="sr-only">Username</label>
+                            <input type="text"
+                                   class="form-control"
+                                   id="username"
+                                   name="username"
+                                   ng-model="user['name']"
+                                   placeholder="username"
+                                   required
+                                   autofocus>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Username</label>
+                            <input type="email"
+                                   class="form-control"
+                                   id="email"
+                                   name="email"
+                                   ng-model="user['email']"
+                                   placeholder="email"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="sr-only">Password</label>
+                            <input type="password"
+                                   class="form-control"
+                                   id="password"
+                                   name="password"
+                                   ng-model="user['password']"
+                                   placeholder="password"
+                                   required>
+                        </div>
+                        <div class="form-group" ng-if="user['password']">
+                            <label for="repassword" class="sr-only">Re Password</label>
+                            <input type="password"
+                                   class="form-control"
+                                   id="repassword"
+                                   name="repassword"
+                                   ng-model="user['repassword']"
+                                   placeholder="re password"
+                                   required>
+                        </div>
+                    </div>
+                    <button type="submit" class="login-button" ng-click="signUp()"><i class="fa fa-arrow-right" aria-hidden="true"></i></button>
+                </div>
+                <div class="etc-login-form">
+                    <p>return to login? <a href="#/login">login</a></p>
+                </div>
+            </form>
+        </div>
+
+</div>

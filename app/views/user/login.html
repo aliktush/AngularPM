@@ -1,0 +1,46 @@
+<div class="login">
+
+        <div class="title">Login</div>
+        <div class="login-form-1">
+            <form id="login-form" class="text-left">
+                <div class="login-form-main-message"
+                     ng-class="{show:message,success:status=='success',error:status=='error'}">{{message}}</div>
+                <div class="main-login-form">
+                    <div class="login-group">
+                        <div class="form-group">
+                            <label for="email" class="sr-only">Email</label>
+                            <input type="email"
+                                   class="form-control"
+                                   id="email"
+                                   name="email"
+                                   placeholder="email"
+                                   ng-model="user['email']"
+                                    autofocus
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="sr-only">Password</label>
+                            <input type="password"
+                                   class="form-control"
+                                   id="password"
+                                   name="password"
+                                   ng-model="user['password']"
+                                   placeholder="password"
+                                   required>
+                        </div>
+                        <div class="form-group login-group-checkbox">
+                            <input type="checkbox" id="remember" name="remember" ng-model="user['remember']">
+                            <label for="remember">remember</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="login-button" ng-click="login()">
+                        <i class="fa fa-sign-in" aria-hidden="true"></i></button>
+                </div>
+                <div class="etc-login-form">
+                    <p>forgot your password? <a href="#">click here</a></p>
+                    <p>new user? <a href="#/signup">create new account</a></p>
+                </div>
+            </form>
+        </div>
+
+</div>

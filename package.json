@@ -1,0 +1,25 @@
+{
+  "name": "lessonslist",
+  "version": "1.0.0",
+  "description": "",
+  "apidoc": {
+    "title": "Lessons List for University",
+    "url" : "https://"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "13.1.0",
+    "browserify-shim": "3.8.12",
+    "grunt": "1.0.1",
+    "grunt-browserify": "4.0.1",
+    "grunt-concat-css": "0.3.1",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0",
+    "remapify": "^2.1.0"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,6 @@
+Array
+(
+    [email] => vinex@mail.ru
+    [name] => Admin
+    [password] => 111111
+)
